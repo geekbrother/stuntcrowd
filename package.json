@@ -1,10 +1,9 @@
 {
   "devDependencies": {
     "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "export": "next build && next export",
+    "deploy": "npm run export && gh-pages -d out"
   }
-}
-"scripts": {
-  // other scripts
-  "export": "next build && next export",
-  "deploy": "npm run export && gh-pages -d out"
 }
